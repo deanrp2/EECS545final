@@ -32,10 +32,10 @@ class Transient:
         self.Mturb = Mturb #kg
 
         #simulation parameters
-        self.a = .000001 #s/radian
+        self.a = .1 #s/radian
         self.xboil_u = .98
         self.Tcrit = 450 #K
-        self.omega_upper = 10 #rad/s
+        self.omega_upper = 9 #rad/s
         if sim_parms is None:
             pass
         else:
@@ -189,24 +189,15 @@ class Transient:
 
         #logging accident status
         if p.status == 0:
-            self.accident = None
+            self.accident = "No accident"
             self.accident_time = None
         elif p.status == -1:
             self.accident = "Unphysical"
             self.accident_time = self.t[-1]
         else:
             accident_index = np.where(np.array([len(a) for a in p.t_events]) > 0)[0][0]
-            print(accident_index)
-            print(p.t_events)
-            exit()
             self.accident = ATE_names[accident_index]
-            try:
-                self.accident_time = p.t_events[accident_index][0]
-            except:
-                print(p.t_events)
-                print(accident_index)
-                print(p.t_events[accident_index])
-                exit()
+            self.accident_time = p.t_events[accident_index][0]
 
 
         #getting rotation speed
