@@ -16,9 +16,9 @@ Defaults for all parameters will be considered the "nominal" configuration.
 
 # Operational parameter ranges
 Reasonable ranges for the operational ranges (with the nominal design parameters) are:
-- ``qdot_boil``: [10000-40000]
-- ``Pout_frac``: [.05-.4]
-- ``mdot``: [5-30]
+- ``qdot_boil``: [10000-50000]
+- ``Pout_frac``: [.05-.5]
+- ``mdot``: [0-60]
 - ``T0``: [300-340]
 - ``P0``: [5-20]
 - ``Pout_time``: [0-60]
