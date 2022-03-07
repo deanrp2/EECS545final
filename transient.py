@@ -195,9 +195,18 @@ class Transient:
             self.accident = "Unphysical"
             self.accident_time = self.t[-1]
         else:
-            accident_index = np.where(len(p.t_events) > 0)[0][0]
+            accident_index = np.where(np.array([len(a) for a in p.t_events]) > 0)[0][0]
+            print(accident_index)
+            print(p.t_events)
+            exit()
             self.accident = ATE_names[accident_index]
-            self.accident_time = p.t_events[accident_index][0]
+            try:
+                self.accident_time = p.t_events[accident_index][0]
+            except:
+                print(p.t_events)
+                print(accident_index)
+                print(p.t_events[accident_index])
+                exit()
 
 
         #getting rotation speed
@@ -249,12 +258,3 @@ class Transient:
                 self.Pout.append(Pout_frac*self.Eturb[i])
             else:
                 self.Pout.append(0)
-
-
-if __name__ == "__main__":
-    #example of how to use
-    t = Transient()
-    tfinal = 5*60 #s
-    t.simulate(tfinal)
-    plt.plot(t.t, t.Tboil)
-    plt.show()
