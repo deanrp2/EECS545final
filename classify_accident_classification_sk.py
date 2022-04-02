@@ -123,8 +123,6 @@ def logreg(Xtrain, Xvalid, Xtest, Ytrain, Yvalid, Ytest, Xtrans, Ytrans):
     #testing losses
     Ypred = opt_model.predict(Xtest)
     Ypred_prob = opt_model.predict_proba(Xtest)
-    print(Ypred_prob)
-    exit()
 
     test_losses = all_loss(Ypred, Ypred_prob, Ytest)
 
