@@ -36,7 +36,12 @@ knn_opt_calls = 30
 svm_opt_calls = 50
 tree_opt_calls = 20
 
-def loss(Ypred, Ypred_prob, Ytrue, metric = None): 
+def loss(Ypred, Ypred_prob, Ytruei, metric = None): 
+    if len(Ytruei.shape) == 2:
+        Ytrue = Ytruei.argmax(1)
+    else:
+        Ytrue = Ytruei
+
     if metric == None:
         metric = hyperopt_metric
 
@@ -118,6 +123,8 @@ def logreg(Xtrain, Xvalid, Xtest, Ytrain, Yvalid, Ytest, Xtrans, Ytrans):
     #testing losses
     Ypred = opt_model.predict(Xtest)
     Ypred_prob = opt_model.predict_proba(Xtest)
+    print(Ypred_prob)
+    exit()
 
     test_losses = all_loss(Ypred, Ypred_prob, Ytest)
 
