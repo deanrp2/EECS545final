@@ -246,7 +246,7 @@ def gpc(Xtrain, Xvalid, Xtest, Ytrain, Yvalid, Ytest, Xtrans, Ytrans):
         return loss(Ypred, Ypred_prob, Yvalid)
 
     hopts = {}
-    opt_model = DecisionTreeClassifier(**hopts)
+    opt_model = GaussianProcessClassifier(**hopts)
     opt_model.fit(Xtrain, Ytrain)
 
     #training losses
