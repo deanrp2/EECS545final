@@ -267,7 +267,7 @@ if __name__ == "__main__":
     start = time.time()
 
     #import data
-    data = pd.read_csv("accident_classification/operation_accidents.csv")
+    data = pd.read_csv("accident_classification/operation_accidents.csv").iloc[:2000]
 
     # load x data
     rXdf = data.iloc[:,:6]
@@ -313,6 +313,14 @@ if __name__ == "__main__":
         for m in metric_opts:
             pt += ("%.4f"%r[1][m]).ljust(15)
         print(pt)
+
+    for i, r in enumerate(rs):
+        print(names[i])
+        try:
+            print(r[2])
+        except:
+            pass
+
 
 
 

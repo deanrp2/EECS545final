@@ -20,7 +20,7 @@ import tensorflow as tf
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import balanced_accuracy_score
 
-opt = True
+opt = False
 dnn_opt_calls = 50
 
 def dnn(Xtrain, Xvalid, Xtest, Ytrain, Yvalid, Ytest, Xtrans, Ytrans):
@@ -46,11 +46,11 @@ def dnn(Xtrain, Xvalid, Xtest, Ytrain, Yvalid, Ytest, Xtrans, Ytrans):
         return a
 
     dim_width = Integer(low = 1, high = int(60), name = "width")
-    dim_nlayers= Integer(low = 1, high = int(10), name = "nlayers")
+    dim_nlayers= Integer(low = 1, high = int(20), name = "nlayers")
     #dim_activation= Categorical(["relu", "sigmoid", "softmax", "softplus",
     #    "softsign", "tanh", "selu", "elu", "exponential"], name = "activation")
     dim_activation= Categorical(["sigmoid"], name = "activation")
-    dim_epochs = Integer(low = 200, high = 400, name = "epochs")
+    dim_epochs = Integer(low = 200, high = 1500, name = "epochs")
     dim_learning_rate = Categorical([0.01, 0.001, 0.0001], name = "learning_rate")
     dims = [dim_width, dim_nlayers, dim_activation, dim_epochs, dim_learning_rate]
 
@@ -63,7 +63,7 @@ def dnn(Xtrain, Xvalid, Xtest, Ytrain, Yvalid, Ytest, Xtrans, Ytrans):
                 "learning_rate" : learning_rate}
         return -dnn_loss(Xtrain, Xvalid, Ytrain, Yvalid, hopts)
 
-    initial_guess = [39, 4, "sigmoid", 400, 0.01]
+    initial_guess = [56, 2, "sigmoid", 432, 0.001]
 
     if opt:
         search_result = gp_minimize(func = fitness, dimensions = dims, n_calls = dnn_opt_calls,
