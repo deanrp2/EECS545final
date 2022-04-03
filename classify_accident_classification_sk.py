@@ -267,7 +267,7 @@ if __name__ == "__main__":
     start = time.time()
 
     #import data
-    data = pd.read_csv("accident_classification/operation_accidents.csv").iloc[:2000]
+    data = pd.read_csv("accident_classification/operation_accidents.csv").iloc[:10000]
 
     # load x data
     rXdf = data.iloc[:,:6]
