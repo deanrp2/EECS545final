@@ -48,7 +48,7 @@ class Transient:
                 self.Tcrit = sim_parms["Tcrit"]
 
     def simulate(self, tfinal, max_step = None, qdot_boil=25000, Pout_frac=.1, Pout_time=60,
-            mdot=13, T0=300, P0=15.5):
+            mdot=13, T0=300, P0=15.5, teval = None):
         """
         Perform simulation until time tend with given operational conditions.
 
@@ -178,9 +178,9 @@ class Transient:
         #perform stepping calculation
         E0 = 1e-5 #kJ, energy to help with numerics
         if max_step is None:
-            p = solve_ivp(f, (0, tfinal), [T0, E0], method = "Radau", events = ATE_events)
+            p = solve_ivp(f, (0, tfinal), [T0, E0], method = "Radau", events = ATE_events, t_eval = t_eval)
         else:
-            p = solve_ivp(f, (0, tfinal), [T0, E0], method = "Radau", events = ATE_events, max_step = max_step)
+            p = solve_ivp(f, (0, tfinal), [T0, E0], method = "Radau", events = ATE_events, max_step = max_step, t_eval = t_eval)
 
         #calculate simulation quantities
         self.t = p.t
