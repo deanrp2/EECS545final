@@ -48,7 +48,7 @@ class Transient:
                 self.Tcrit = sim_parms["Tcrit"]
 
     def simulate(self, tfinal, max_step = None, qdot_boil=25000, Pout_frac=.1, Pout_time=60,
-            mdot=13, T0=300, P0=15.5, teval = None):
+            mdot=13, T0=300, P0=15.5, t_eval = None):
         """
         Perform simulation until time tend with given operational conditions.
 
