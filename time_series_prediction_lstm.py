@@ -76,3 +76,4 @@ if __name__ == "__main__":
     forecast_normalized = model.predict(X_test)
     forecast_normalized_repeat = np.repeat(forecast_normalized, training_data.shape[1], axis=-1)
     forecast = normalizer.inverse_transform(forecast_normalized_repeat)[:, 0]
+    # TODO: add graph/print out metrics
