@@ -65,7 +65,10 @@ def dnn(Xtrain, Xvalid, Xtest, Ytrain, Yvalid, Ytest):
                 "learning_rate" : learning_rate}
         return dnn_loss(Xtrain, Xvalid, Ytrain, Yvalid, hopts)
 
-    initial_guess = [56, 2, "relu", 400, 0.001]
+    # first one is the actual optimal
+    # initial_guess = [28, 11, "relu", 1283, 0.001]
+    # initial_guess = [55, 2, "relu", 400, 0.001]
+    initial_guess = [55, 2, "relu", 50, 0.001]
 
     if opt:
         search_result = gp_minimize(func = fitness, dimensions = dims, n_calls = dnn_opt_calls, x0 = initial_guess, verbose = True)
