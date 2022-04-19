@@ -145,6 +145,7 @@ if __name__ == "__main__":
 
     # splitting the datasets
     Xtrain, Xvalid, Xtest, Ytrain, Yvalid, Ytest = split(X, Y)
+    print(Xtrain.shape, Xtest.shape, Ytrain.shape)
     dsets = [Xtrain, Xvalid, Xtest, Ytrain, Yvalid, Ytest]
 
     # training
