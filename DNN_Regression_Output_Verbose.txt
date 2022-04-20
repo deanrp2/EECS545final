@@ -1,455 +1,1473 @@
-Iteration No: 1 started. Evaluating function at provided point.
-Model: "sequential_9"
 _________________________________________________________________
- Layer (type)                Output Shape              Param #   
+Layer (type)                 Output Shape              Param #
 =================================================================
- dense_36 (Dense)            (None, 56)                392       
-                                                                 
- dense_37 (Dense)            (None, 56)                3192      
-                                                                 
- dense_38 (Dense)            (None, 56)                3192      
-                                                                 
- dense_39 (Dense)            (None, 1)                 57        
-                                                                 
+dense (Dense)                (None, 10)                70
+_________________________________________________________________
+dense_1 (Dense)              (None, 10)                110
+_________________________________________________________________
+dense_2 (Dense)              (None, 10)                110
+_________________________________________________________________
+dense_3 (Dense)              (None, 10)                110
+_________________________________________________________________
+dense_4 (Dense)              (None, 10)                110
+_________________________________________________________________
+dense_5 (Dense)              (None, 10)                110
+_________________________________________________________________
+dense_6 (Dense)              (None, 1)                 11
 =================================================================
-Total params: 6,833
-Trainable params: 6,833
+Total params: 631
+Trainable params: 631
 Non-trainable params: 0
 _________________________________________________________________
 None
 Iteration No: 1 ended. Evaluation done at provided point.
-Time taken: 201.2339
-Function value obtained: 1.0973
-Current minimum: 1.0973
+Time taken: 32.6388
+Function value obtained: 2.5563
+Current minimum: 2.5563
 Iteration No: 2 started. Evaluating function at random point.
-Model: "sequential_10"
+Model: "sequential_1"
 _________________________________________________________________
- Layer (type)                Output Shape              Param #   
+Layer (type)                 Output Shape              Param #
 =================================================================
- dense_40 (Dense)            (None, 55)                385       
-                                                                 
- dense_41 (Dense)            (None, 55)                3080      
-                                                                 
- dense_42 (Dense)            (None, 55)                3080      
-                                                                 
- dense_43 (Dense)            (None, 55)                3080      
-                                                                 
- dense_44 (Dense)            (None, 55)                3080      
-                                                                 
- dense_45 (Dense)            (None, 55)                3080      
-                                                                 
- dense_46 (Dense)            (None, 55)                3080      
-                                                                 
- dense_47 (Dense)            (None, 55)                3080      
-                                                                 
- dense_48 (Dense)            (None, 55)                3080      
-                                                                 
- dense_49 (Dense)            (None, 55)                3080      
-                                                                 
- dense_50 (Dense)            (None, 55)                3080      
-                                                                 
- dense_51 (Dense)            (None, 55)                3080      
-                                                                 
- dense_52 (Dense)            (None, 55)                3080      
-                                                                 
- dense_53 (Dense)            (None, 55)                3080      
-                                                                 
- dense_54 (Dense)            (None, 1)                 56        
-                                                                 
+dense_7 (Dense)              (None, 24)                168
+_________________________________________________________________
+dense_8 (Dense)              (None, 24)                600
+_________________________________________________________________
+dense_9 (Dense)              (None, 24)                600
+_________________________________________________________________
+dense_10 (Dense)             (None, 24)                600
+_________________________________________________________________
+dense_11 (Dense)             (None, 24)                600
+_________________________________________________________________
+dense_12 (Dense)             (None, 24)                600
+_________________________________________________________________
+dense_13 (Dense)             (None, 24)                600
+_________________________________________________________________
+dense_14 (Dense)             (None, 24)                600
+_________________________________________________________________
+dense_15 (Dense)             (None, 24)                600
+_________________________________________________________________
+dense_16 (Dense)             (None, 1)                 25
 =================================================================
-Total params: 40,481
-Trainable params: 40,481
+Total params: 4,993
+Trainable params: 4,993
 Non-trainable params: 0
 _________________________________________________________________
 None
 Iteration No: 2 ended. Evaluation done at random point.
-Time taken: 1223.4380
-Function value obtained: 1.4475
-Current minimum: 1.0973
+Time taken: 93.2698
+Function value obtained: 33.1007
+Current minimum: 2.5563
 Iteration No: 3 started. Evaluating function at random point.
-Model: "sequential_11"
+Model: "sequential_2"
 _________________________________________________________________
- Layer (type)                Output Shape              Param #   
+Layer (type)                 Output Shape              Param #
 =================================================================
- dense_55 (Dense)            (None, 48)                336       
-                                                                 
- dense_56 (Dense)            (None, 48)                2352      
-                                                                 
- dense_57 (Dense)            (None, 48)                2352      
-                                                                 
- dense_58 (Dense)            (None, 48)                2352      
-                                                                 
- dense_59 (Dense)            (None, 48)                2352      
-                                                                 
- dense_60 (Dense)            (None, 48)                2352      
-                                                                 
- dense_61 (Dense)            (None, 1)                 49        
-                                                                 
+dense_17 (Dense)             (None, 7)                 49
+_________________________________________________________________
+dense_18 (Dense)             (None, 7)                 56
+_________________________________________________________________
+dense_19 (Dense)             (None, 7)                 56
+_________________________________________________________________
+dense_20 (Dense)             (None, 1)                 8
 =================================================================
-Total params: 12,145
-Trainable params: 12,145
+Total params: 169
+Trainable params: 169
 Non-trainable params: 0
 _________________________________________________________________
 None
 Iteration No: 3 ended. Evaluation done at random point.
-Time taken: 518.2566
-Function value obtained: 1.3180
-Current minimum: 1.0973
+Time taken: 46.4995
+Function value obtained: 6.0454
+Current minimum: 2.5563
 Iteration No: 4 started. Evaluating function at random point.
-Model: "sequential_12"
+Model: "sequential_3"
 _________________________________________________________________
- Layer (type)                Output Shape              Param #   
+Layer (type)                 Output Shape              Param #
 =================================================================
- dense_62 (Dense)            (None, 1)                 7         
-                                                                 
- dense_63 (Dense)            (None, 1)                 2         
-                                                                 
- dense_64 (Dense)            (None, 1)                 2         
-                                                                 
- dense_65 (Dense)            (None, 1)                 2         
-                                                                 
- dense_66 (Dense)            (None, 1)                 2         
-                                                                 
- dense_67 (Dense)            (None, 1)                 2         
-                                                                 
- dense_68 (Dense)            (None, 1)                 2         
-                                                                 
- dense_69 (Dense)            (None, 1)                 2         
-                                                                 
- dense_70 (Dense)            (None, 1)                 2         
-                                                                 
- dense_71 (Dense)            (None, 1)                 2         
-                                                                 
+dense_21 (Dense)             (None, 15)                105
+_________________________________________________________________
+dense_22 (Dense)             (None, 15)                240
+_________________________________________________________________
+dense_23 (Dense)             (None, 15)                240
+_________________________________________________________________
+dense_24 (Dense)             (None, 15)                240
+_________________________________________________________________
+dense_25 (Dense)             (None, 15)                240
+_________________________________________________________________
+dense_26 (Dense)             (None, 15)                240
+_________________________________________________________________
+dense_27 (Dense)             (None, 15)                240
+_________________________________________________________________
+dense_28 (Dense)             (None, 15)                240
+_________________________________________________________________
+dense_29 (Dense)             (None, 1)                 16
 =================================================================
-Total params: 25
-Trainable params: 25
+Total params: 1,801
+Trainable params: 1,801
 Non-trainable params: 0
 _________________________________________________________________
 None
 Iteration No: 4 ended. Evaluation done at random point.
-Time taken: 420.8071
-Function value obtained: 34.6845
-Current minimum: 1.0973
+Time taken: 125.3489
+Function value obtained: 2.0210
+Current minimum: 2.0210
 Iteration No: 5 started. Evaluating function at random point.
-Model: "sequential_13"
+Model: "sequential_4"
 _________________________________________________________________
- Layer (type)                Output Shape              Param #   
+Layer (type)                 Output Shape              Param #
 =================================================================
- dense_72 (Dense)            (None, 28)                196       
-                                                                 
- dense_73 (Dense)            (None, 28)                812       
-                                                                 
- dense_74 (Dense)            (None, 28)                812       
-                                                                 
- dense_75 (Dense)            (None, 28)                812       
-                                                                 
- dense_76 (Dense)            (None, 28)                812       
-                                                                 
- dense_77 (Dense)            (None, 28)                812       
-                                                                 
- dense_78 (Dense)            (None, 28)                812       
-                                                                 
- dense_79 (Dense)            (None, 28)                812       
-                                                                 
- dense_80 (Dense)            (None, 28)                812       
-                                                                 
- dense_81 (Dense)            (None, 28)                812       
-                                                                 
- dense_82 (Dense)            (None, 28)                812       
-                                                                 
- dense_83 (Dense)            (None, 28)                812       
-                                                                 
- dense_84 (Dense)            (None, 1)                 29        
-                                                                 
+dense_30 (Dense)             (None, 25)                175
+_________________________________________________________________
+dense_31 (Dense)             (None, 25)                650
+_________________________________________________________________
+dense_32 (Dense)             (None, 25)                650
+_________________________________________________________________
+dense_33 (Dense)             (None, 25)                650
+_________________________________________________________________
+dense_34 (Dense)             (None, 25)                650
+_________________________________________________________________
+dense_35 (Dense)             (None, 25)                650
+_________________________________________________________________
+dense_36 (Dense)             (None, 25)                650
+_________________________________________________________________
+dense_37 (Dense)             (None, 25)                650
+_________________________________________________________________
+dense_38 (Dense)             (None, 25)                650
+_________________________________________________________________
+dense_39 (Dense)             (None, 25)                650
+_________________________________________________________________
+dense_40 (Dense)             (None, 1)                 26
 =================================================================
-Total params: 9,157
-Trainable params: 9,157
+Total params: 6,051
+Trainable params: 6,051
 Non-trainable params: 0
 _________________________________________________________________
 None
 Iteration No: 5 ended. Evaluation done at random point.
-Time taken: 923.8157
-Function value obtained: 0.8304
-Current minimum: 0.8304
+Time taken: 91.9580
+Function value obtained: 2.2693
+Current minimum: 2.0210
 Iteration No: 6 started. Evaluating function at random point.
-Model: "sequential_14"
+Model: "sequential_5"
 _________________________________________________________________
- Layer (type)                Output Shape              Param #   
+Layer (type)                 Output Shape              Param #
 =================================================================
- dense_85 (Dense)            (None, 10)                70        
-                                                                 
- dense_86 (Dense)            (None, 10)                110       
-                                                                 
- dense_87 (Dense)            (None, 10)                110       
-                                                                 
- dense_88 (Dense)            (None, 10)                110       
-                                                                 
- dense_89 (Dense)            (None, 10)                110       
-                                                                 
- dense_90 (Dense)            (None, 1)                 11        
-                                                                 
+dense_41 (Dense)             (None, 21)                147
+_________________________________________________________________
+dense_42 (Dense)             (None, 21)                462
+_________________________________________________________________
+dense_43 (Dense)             (None, 21)                462
+_________________________________________________________________
+dense_44 (Dense)             (None, 21)                462
+_________________________________________________________________
+dense_45 (Dense)             (None, 21)                462
+_________________________________________________________________
+dense_46 (Dense)             (None, 21)                462
+_________________________________________________________________
+dense_47 (Dense)             (None, 1)                 22
 =================================================================
-Total params: 521
-Trainable params: 521
+Total params: 2,479
+Trainable params: 2,479
 Non-trainable params: 0
 _________________________________________________________________
 None
 Iteration No: 6 ended. Evaluation done at random point.
-Time taken: 165.9443
-Function value obtained: 2.2901
-Current minimum: 0.8304
+Time taken: 55.1919
+Function value obtained: 2.5856
+Current minimum: 2.0210
 Iteration No: 7 started. Evaluating function at random point.
-Model: "sequential_15"
+Model: "sequential_6"
 _________________________________________________________________
- Layer (type)                Output Shape              Param #   
+Layer (type)                 Output Shape              Param #
 =================================================================
- dense_91 (Dense)            (None, 20)                140       
-                                                                 
- dense_92 (Dense)            (None, 20)                420       
-                                                                 
- dense_93 (Dense)            (None, 20)                420       
-                                                                 
- dense_94 (Dense)            (None, 20)                420       
-                                                                 
- dense_95 (Dense)            (None, 20)                420       
-                                                                 
- dense_96 (Dense)            (None, 20)                420       
-                                                                 
- dense_97 (Dense)            (None, 20)                420       
-                                                                 
- dense_98 (Dense)            (None, 20)                420       
-                                                                 
- dense_99 (Dense)            (None, 20)                420       
-                                                                 
- dense_100 (Dense)           (None, 20)                420       
-                                                                 
- dense_101 (Dense)           (None, 1)                 21        
-                                                                 
+dense_48 (Dense)             (None, 12)                84
+_________________________________________________________________
+dense_49 (Dense)             (None, 12)                156
+_________________________________________________________________
+dense_50 (Dense)             (None, 12)                156
+_________________________________________________________________
+dense_51 (Dense)             (None, 12)                156
+_________________________________________________________________
+dense_52 (Dense)             (None, 12)                156
+_________________________________________________________________
+dense_53 (Dense)             (None, 1)                 13
 =================================================================
-Total params: 3,941
-Trainable params: 3,941
+Total params: 721
+Trainable params: 721
 Non-trainable params: 0
 _________________________________________________________________
 None
 Iteration No: 7 ended. Evaluation done at random point.
-Time taken: 743.1578
-Function value obtained: 1.1293
-Current minimum: 0.8304
+Time taken: 91.0750
+Function value obtained: 2.1812
+Current minimum: 2.0210
 Iteration No: 8 started. Evaluating function at random point.
-Model: "sequential_16"
+Model: "sequential_7"
 _________________________________________________________________
- Layer (type)                Output Shape              Param #   
+Layer (type)                 Output Shape              Param #
 =================================================================
- dense_102 (Dense)           (None, 39)                273       
-                                                                 
- dense_103 (Dense)           (None, 39)                1560      
-                                                                 
- dense_104 (Dense)           (None, 39)                1560      
-                                                                 
- dense_105 (Dense)           (None, 39)                1560      
-                                                                 
- dense_106 (Dense)           (None, 39)                1560      
-                                                                 
- dense_107 (Dense)           (None, 39)                1560      
-                                                                 
- dense_108 (Dense)           (None, 39)                1560      
-                                                                 
- dense_109 (Dense)           (None, 39)                1560      
-                                                                 
- dense_110 (Dense)           (None, 39)                1560      
-                                                                 
- dense_111 (Dense)           (None, 39)                1560      
-                                                                 
- dense_112 (Dense)           (None, 39)                1560      
-                                                                 
- dense_113 (Dense)           (None, 39)                1560      
-                                                                 
- dense_114 (Dense)           (None, 39)                1560      
-                                                                 
- dense_115 (Dense)           (None, 39)                1560      
-                                                                 
- dense_116 (Dense)           (None, 39)                1560      
-                                                                 
- dense_117 (Dense)           (None, 39)                1560      
-                                                                 
- dense_118 (Dense)           (None, 39)                1560      
-                                                                 
- dense_119 (Dense)           (None, 39)                1560      
-                                                                 
- dense_120 (Dense)           (None, 1)                 40        
-                                                                 
+dense_54 (Dense)             (None, 30)                210
+_________________________________________________________________
+dense_55 (Dense)             (None, 30)                930
+_________________________________________________________________
+dense_56 (Dense)             (None, 30)                930
+_________________________________________________________________
+dense_57 (Dense)             (None, 30)                930
+_________________________________________________________________
+dense_58 (Dense)             (None, 30)                930
+_________________________________________________________________
+dense_59 (Dense)             (None, 30)                930
+_________________________________________________________________
+dense_60 (Dense)             (None, 30)                930
+_________________________________________________________________
+dense_61 (Dense)             (None, 1)                 31
 =================================================================
-Total params: 26,833
-Trainable params: 26,833
+Total params: 5,821
+Trainable params: 5,821
 Non-trainable params: 0
 _________________________________________________________________
 None
 Iteration No: 8 ended. Evaluation done at random point.
-Time taken: 1317.4590
-Function value obtained: 34.6845
-Current minimum: 0.8304
+Time taken: 113.0985
+Function value obtained: 1.6524
+Current minimum: 1.6524
 Iteration No: 9 started. Evaluating function at random point.
-Model: "sequential_17"
+Model: "sequential_8"
 _________________________________________________________________
- Layer (type)                Output Shape              Param #   
+Layer (type)                 Output Shape              Param #
 =================================================================
- dense_121 (Dense)           (None, 10)                70        
-                                                                 
- dense_122 (Dense)           (None, 10)                110       
-                                                                 
- dense_123 (Dense)           (None, 10)                110       
-                                                                 
- dense_124 (Dense)           (None, 10)                110       
-                                                                 
- dense_125 (Dense)           (None, 10)                110       
-                                                                 
- dense_126 (Dense)           (None, 10)                110       
-                                                                 
- dense_127 (Dense)           (None, 10)                110       
-                                                                 
- dense_128 (Dense)           (None, 10)                110       
-                                                                 
- dense_129 (Dense)           (None, 10)                110       
-                                                                 
- dense_130 (Dense)           (None, 10)                110       
-                                                                 
- dense_131 (Dense)           (None, 10)                110       
-                                                                 
- dense_132 (Dense)           (None, 10)                110       
-                                                                 
- dense_133 (Dense)           (None, 10)                110       
-                                                                 
- dense_134 (Dense)           (None, 10)                110       
-                                                                 
- dense_135 (Dense)           (None, 10)                110       
-                                                                 
- dense_136 (Dense)           (None, 10)                110       
-                                                                 
- dense_137 (Dense)           (None, 10)                110       
-                                                                 
- dense_138 (Dense)           (None, 10)                110       
-                                                                 
- dense_139 (Dense)           (None, 1)                 11        
-                                                                 
+dense_62 (Dense)             (None, 9)                 63
+_________________________________________________________________
+dense_63 (Dense)             (None, 9)                 90
+_________________________________________________________________
+dense_64 (Dense)             (None, 9)                 90
+_________________________________________________________________
+dense_65 (Dense)             (None, 9)                 90
+_________________________________________________________________
+dense_66 (Dense)             (None, 9)                 90
+_________________________________________________________________
+dense_67 (Dense)             (None, 9)                 90
+_________________________________________________________________
+dense_68 (Dense)             (None, 9)                 90
+_________________________________________________________________
+dense_69 (Dense)             (None, 9)                 90
+_________________________________________________________________
+dense_70 (Dense)             (None, 1)                 10
 =================================================================
-Total params: 1,951
-Trainable params: 1,951
+Total params: 703
+Trainable params: 703
 Non-trainable params: 0
 _________________________________________________________________
 None
 Iteration No: 9 ended. Evaluation done at random point.
-Time taken: 743.5281
-Function value obtained: 34.6845
-Current minimum: 0.8304
+Time taken: 154.3071
+Function value obtained: 2.3198
+Current minimum: 1.6524
 Iteration No: 10 started. Evaluating function at random point.
-Model: "sequential_18"
+Model: "sequential_9"
 _________________________________________________________________
- Layer (type)                Output Shape              Param #   
+Layer (type)                 Output Shape              Param #
 =================================================================
- dense_140 (Dense)           (None, 24)                168       
-                                                                 
- dense_141 (Dense)           (None, 24)                600       
-                                                                 
- dense_142 (Dense)           (None, 24)                600       
-                                                                 
- dense_143 (Dense)           (None, 24)                600       
-                                                                 
- dense_144 (Dense)           (None, 24)                600       
-                                                                 
- dense_145 (Dense)           (None, 24)                600       
-                                                                 
- dense_146 (Dense)           (None, 24)                600       
-                                                                 
- dense_147 (Dense)           (None, 24)                600       
-                                                                 
- dense_148 (Dense)           (None, 24)                600       
-                                                                 
- dense_149 (Dense)           (None, 24)                600       
-                                                                 
- dense_150 (Dense)           (None, 24)                600       
-                                                                 
- dense_151 (Dense)           (None, 24)                600       
-                                                                 
- dense_152 (Dense)           (None, 24)                600       
-                                                                 
- dense_153 (Dense)           (None, 24)                600       
-                                                                 
- dense_154 (Dense)           (None, 24)                600       
-                                                                 
- dense_155 (Dense)           (None, 24)                600       
-                                                                 
- dense_156 (Dense)           (None, 1)                 25        
-                                                                 
+dense_71 (Dense)             (None, 18)                126
+_________________________________________________________________
+dense_72 (Dense)             (None, 18)                342
+_________________________________________________________________
+dense_73 (Dense)             (None, 18)                342
+_________________________________________________________________
+dense_74 (Dense)             (None, 18)                342
+_________________________________________________________________
+dense_75 (Dense)             (None, 18)                342
+_________________________________________________________________
+dense_76 (Dense)             (None, 18)                342
+_________________________________________________________________
+dense_77 (Dense)             (None, 1)                 19
 =================================================================
-Total params: 9,193
-Trainable params: 9,193
+Total params: 1,855
+Trainable params: 1,855
 Non-trainable params: 0
 _________________________________________________________________
 None
 Iteration No: 10 ended. Evaluation done at random point.
-Time taken: 1103.5262
-Function value obtained: 2.1489
-Current minimum: 0.8304
+Time taken: 84.6201
+Function value obtained: 1.3177
+Current minimum: 1.3177
 Iteration No: 11 started. Evaluating function at random point.
-Model: "sequential_19"
+Model: "sequential_10"
 _________________________________________________________________
- Layer (type)                Output Shape              Param #   
+Layer (type)                 Output Shape              Param #
 =================================================================
- dense_157 (Dense)           (None, 2)                 14        
-                                                                 
- dense_158 (Dense)           (None, 2)                 6         
-                                                                 
- dense_159 (Dense)           (None, 2)                 6         
-                                                                 
- dense_160 (Dense)           (None, 1)                 3         
-                                                                 
+dense_78 (Dense)             (None, 7)                 49
+_________________________________________________________________
+dense_79 (Dense)             (None, 7)                 56
+_________________________________________________________________
+dense_80 (Dense)             (None, 7)                 56
+_________________________________________________________________
+dense_81 (Dense)             (None, 7)                 56
+_________________________________________________________________
+dense_82 (Dense)             (None, 7)                 56
+_________________________________________________________________
+dense_83 (Dense)             (None, 7)                 56
+_________________________________________________________________
+dense_84 (Dense)             (None, 7)                 56
+_________________________________________________________________
+dense_85 (Dense)             (None, 7)                 56
+_________________________________________________________________
+dense_86 (Dense)             (None, 1)                 8
 =================================================================
-Total params: 29
-Trainable params: 29
+Total params: 449
+Trainable params: 449
 Non-trainable params: 0
 _________________________________________________________________
 None
 Iteration No: 11 ended. Evaluation done at random point.
-Time taken: 156.0617
-Function value obtained: 14.3417
-Current minimum: 0.8304
-Model: "sequential_20"
+Time taken: 165.0613
+Function value obtained: 2.3607
+Current minimum: 1.3177
+Iteration No: 12 started. Evaluating function at random point.
+Model: "sequential_11"
 _________________________________________________________________
- Layer (type)                Output Shape              Param #   
+Layer (type)                 Output Shape              Param #
 =================================================================
- dense_161 (Dense)           (None, 28)                196       
-                                                                 
- dense_162 (Dense)           (None, 28)                812       
-                                                                 
- dense_163 (Dense)           (None, 28)                812       
-                                                                 
- dense_164 (Dense)           (None, 28)                812       
-                                                                 
- dense_165 (Dense)           (None, 28)                812       
-                                                                 
- dense_166 (Dense)           (None, 28)                812       
-                                                                 
- dense_167 (Dense)           (None, 28)                812       
-                                                                 
- dense_168 (Dense)           (None, 28)                812       
-                                                                 
- dense_169 (Dense)           (None, 28)                812       
-                                                                 
- dense_170 (Dense)           (None, 28)                812       
-                                                                 
- dense_171 (Dense)           (None, 28)                812       
-                                                                 
- dense_172 (Dense)           (None, 28)                812       
-                                                                 
- dense_173 (Dense)           (None, 1)                 29        
-                                                                 
+dense_87 (Dense)             (None, 28)                196
+_________________________________________________________________
+dense_88 (Dense)             (None, 28)                812
+_________________________________________________________________
+dense_89 (Dense)             (None, 28)                812
+_________________________________________________________________
+dense_90 (Dense)             (None, 28)                812
+_________________________________________________________________
+dense_91 (Dense)             (None, 28)                812
+_________________________________________________________________
+dense_92 (Dense)             (None, 28)                812
+_________________________________________________________________
+dense_93 (Dense)             (None, 1)                 29
 =================================================================
-Total params: 9,157
-Trainable params: 9,157
+Total params: 4,285
+Trainable params: 4,285
 Non-trainable params: 0
 _________________________________________________________________
 None
-340/340 [==============================] - 1s 3ms/step - loss: 32.2009
+Iteration No: 12 ended. Evaluation done at random point.
+Time taken: 144.4511
+Function value obtained: 1.1315
+Current minimum: 1.1315
+Iteration No: 13 started. Searching for the next optimal point.
+Model: "sequential_12"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_94 (Dense)             (None, 30)                210
+_________________________________________________________________
+dense_95 (Dense)             (None, 30)                930
+_________________________________________________________________
+dense_96 (Dense)             (None, 30)                930
+_________________________________________________________________
+dense_97 (Dense)             (None, 30)                930
+_________________________________________________________________
+dense_98 (Dense)             (None, 30)                930
+_________________________________________________________________
+dense_99 (Dense)             (None, 30)                930
+_________________________________________________________________
+dense_100 (Dense)            (None, 1)                 31
+=================================================================
+Total params: 4,891
+Trainable params: 4,891
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 13 ended. Search finished for the next optimal point.
+Time taken: 156.9340
+Function value obtained: 3.9603
+Current minimum: 1.1315
+Iteration No: 14 started. Searching for the next optimal point.
+Model: "sequential_13"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_101 (Dense)            (None, 30)                210
+_________________________________________________________________
+dense_102 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_103 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_104 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_105 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_106 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_107 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_108 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_109 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_110 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_111 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_112 (Dense)            (None, 1)                 31
+=================================================================
+Total params: 9,541
+Trainable params: 9,541
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 14 ended. Search finished for the next optimal point.
+Time taken: 28.6275
+Function value obtained: 33.1007
+Current minimum: 1.1315
+Iteration No: 15 started. Searching for the next optimal point.
+Model: "sequential_14"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_113 (Dense)            (None, 3)                 21
+_________________________________________________________________
+dense_114 (Dense)            (None, 3)                 12
+_________________________________________________________________
+dense_115 (Dense)            (None, 3)                 12
+_________________________________________________________________
+dense_116 (Dense)            (None, 3)                 12
+_________________________________________________________________
+dense_117 (Dense)            (None, 3)                 12
+_________________________________________________________________
+dense_118 (Dense)            (None, 3)                 12
+_________________________________________________________________
+dense_119 (Dense)            (None, 3)                 12
+_________________________________________________________________
+dense_120 (Dense)            (None, 1)                 4
+=================================================================
+Total params: 97
+Trainable params: 97
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 15 ended. Search finished for the next optimal point.
+Time taken: 166.9307
+Function value obtained: 33.1007
+Current minimum: 1.1315
+Iteration No: 16 started. Searching for the next optimal point.
+Model: "sequential_15"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_121 (Dense)            (None, 11)                77
+_________________________________________________________________
+dense_122 (Dense)            (None, 11)                132
+_________________________________________________________________
+dense_123 (Dense)            (None, 11)                132
+_________________________________________________________________
+dense_124 (Dense)            (None, 11)                132
+_________________________________________________________________
+dense_125 (Dense)            (None, 1)                 12
+=================================================================
+Total params: 485
+Trainable params: 485
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 16 ended. Search finished for the next optimal point.
+Time taken: 75.5186
+Function value obtained: 1.7372
+Current minimum: 1.1315
+Iteration No: 17 started. Searching for the next optimal point.
+Model: "sequential_16"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_126 (Dense)            (None, 30)                210
+_________________________________________________________________
+dense_127 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_128 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_129 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_130 (Dense)            (None, 1)                 31
+=================================================================
+Total params: 3,031
+Trainable params: 3,031
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 17 ended. Search finished for the next optimal point.
+Time taken: 113.1077
+Function value obtained: 1.2523
+Current minimum: 1.1315
+Iteration No: 18 started. Searching for the next optimal point.
+Model: "sequential_17"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_131 (Dense)            (None, 3)                 21
+_________________________________________________________________
+dense_132 (Dense)            (None, 3)                 12
+_________________________________________________________________
+dense_133 (Dense)            (None, 3)                 12
+_________________________________________________________________
+dense_134 (Dense)            (None, 3)                 12
+_________________________________________________________________
+dense_135 (Dense)            (None, 3)                 12
+_________________________________________________________________
+dense_136 (Dense)            (None, 3)                 12
+_________________________________________________________________
+dense_137 (Dense)            (None, 3)                 12
+_________________________________________________________________
+dense_138 (Dense)            (None, 3)                 12
+_________________________________________________________________
+dense_139 (Dense)            (None, 3)                 12
+_________________________________________________________________
+dense_140 (Dense)            (None, 3)                 12
+_________________________________________________________________
+dense_141 (Dense)            (None, 3)                 12
+_________________________________________________________________
+dense_142 (Dense)            (None, 1)                 4
+=================================================================
+Total params: 145
+Trainable params: 145
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 18 ended. Search finished for the next optimal point.
+Time taken: 28.2021
+Function value obtained: 33.1007
+Current minimum: 1.1315
+Iteration No: 19 started. Searching for the next optimal point.
+Model: "sequential_18"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_143 (Dense)            (None, 28)                196
+_________________________________________________________________
+dense_144 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_145 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_146 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_147 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_148 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_149 (Dense)            (None, 1)                 29
+=================================================================
+Total params: 4,285
+Trainable params: 4,285
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 19 ended. Search finished for the next optimal point.
+Time taken: 139.1654
+Function value obtained: 1.1957
+Current minimum: 1.1315
+Iteration No: 20 started. Searching for the next optimal point.
+Model: "sequential_19"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_150 (Dense)            (None, 30)                210
+_________________________________________________________________
+dense_151 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_152 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_153 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_154 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_155 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_156 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_157 (Dense)            (None, 1)                 31
+=================================================================
+Total params: 5,821
+Trainable params: 5,821
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 20 ended. Search finished for the next optimal point.
+Time taken: 106.2845
+Function value obtained: 1.5673
+Current minimum: 1.1315
+Iteration No: 21 started. Searching for the next optimal point.
+Model: "sequential_20"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_158 (Dense)            (None, 23)                161
+_________________________________________________________________
+dense_159 (Dense)            (None, 23)                552
+_________________________________________________________________
+dense_160 (Dense)            (None, 23)                552
+_________________________________________________________________
+dense_161 (Dense)            (None, 23)                552
+_________________________________________________________________
+dense_162 (Dense)            (None, 1)                 24
+=================================================================
+Total params: 1,841
+Trainable params: 1,841
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 21 ended. Search finished for the next optimal point.
+Time taken: 102.7692
+Function value obtained: 33.1007
+Current minimum: 1.1315
+Iteration No: 22 started. Searching for the next optimal point.
+Model: "sequential_21"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_163 (Dense)            (None, 5)                 35
+_________________________________________________________________
+dense_164 (Dense)            (None, 5)                 30
+_________________________________________________________________
+dense_165 (Dense)            (None, 5)                 30
+_________________________________________________________________
+dense_166 (Dense)            (None, 5)                 30
+_________________________________________________________________
+dense_167 (Dense)            (None, 1)                 6
+=================================================================
+Total params: 131
+Trainable params: 131
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 22 ended. Search finished for the next optimal point.
+Time taken: 54.8961
+Function value obtained: 4.5392
+Current minimum: 1.1315
+Iteration No: 23 started. Searching for the next optimal point.
+Model: "sequential_22"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_168 (Dense)            (None, 21)                147
+_________________________________________________________________
+dense_169 (Dense)            (None, 21)                462
+_________________________________________________________________
+dense_170 (Dense)            (None, 21)                462
+_________________________________________________________________
+dense_171 (Dense)            (None, 21)                462
+_________________________________________________________________
+dense_172 (Dense)            (None, 21)                462
+_________________________________________________________________
+dense_173 (Dense)            (None, 1)                 22
+=================================================================
+Total params: 2,017
+Trainable params: 2,017
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 23 ended. Search finished for the next optimal point.
+Time taken: 100.7888
+Function value obtained: 1.3174
+Current minimum: 1.1315
+Iteration No: 24 started. Searching for the next optimal point.
+Model: "sequential_23"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_174 (Dense)            (None, 16)                112
+_________________________________________________________________
+dense_175 (Dense)            (None, 16)                272
+_________________________________________________________________
+dense_176 (Dense)            (None, 16)                272
+_________________________________________________________________
+dense_177 (Dense)            (None, 16)                272
+_________________________________________________________________
+dense_178 (Dense)            (None, 16)                272
+_________________________________________________________________
+dense_179 (Dense)            (None, 16)                272
+_________________________________________________________________
+dense_180 (Dense)            (None, 16)                272
+_________________________________________________________________
+dense_181 (Dense)            (None, 16)                272
+_________________________________________________________________
+dense_182 (Dense)            (None, 16)                272
+_________________________________________________________________
+dense_183 (Dense)            (None, 16)                272
+_________________________________________________________________
+dense_184 (Dense)            (None, 1)                 17
+=================================================================
+Total params: 2,577
+Trainable params: 2,577
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 24 ended. Search finished for the next optimal point.
+Time taken: 191.0187
+Function value obtained: 33.1007
+Current minimum: 1.1315
+Iteration No: 25 started. Searching for the next optimal point.
+Model: "sequential_24"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_185 (Dense)            (None, 28)                196
+_________________________________________________________________
+dense_186 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_187 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_188 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_189 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_190 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_191 (Dense)            (None, 1)                 29
+=================================================================
+Total params: 4,285
+Trainable params: 4,285
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 25 ended. Search finished for the next optimal point.
+Time taken: 153.5322
+Function value obtained: 1.2482
+Current minimum: 1.1315
+Iteration No: 26 started. Searching for the next optimal point.
+Model: "sequential_25"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_192 (Dense)            (None, 28)                196
+_________________________________________________________________
+dense_193 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_194 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_195 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_196 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_197 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_198 (Dense)            (None, 1)                 29
+=================================================================
+Total params: 4,285
+Trainable params: 4,285
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 26 ended. Search finished for the next optimal point.
+Time taken: 21.4383
+Function value obtained: 33.1007
+Current minimum: 1.1315
+Iteration No: 27 started. Searching for the next optimal point.
+Model: "sequential_26"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_199 (Dense)            (None, 22)                154
+_________________________________________________________________
+dense_200 (Dense)            (None, 22)                506
+_________________________________________________________________
+dense_201 (Dense)            (None, 22)                506
+_________________________________________________________________
+dense_202 (Dense)            (None, 22)                506
+_________________________________________________________________
+dense_203 (Dense)            (None, 22)                506
+_________________________________________________________________
+dense_204 (Dense)            (None, 22)                506
+_________________________________________________________________
+dense_205 (Dense)            (None, 1)                 23
+=================================================================
+Total params: 2,707
+Trainable params: 2,707
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 27 ended. Search finished for the next optimal point.
+Time taken: 143.6445
+Function value obtained: 1.7077
+Current minimum: 1.1315
+Iteration No: 28 started. Searching for the next optimal point.
+Model: "sequential_27"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_206 (Dense)            (None, 30)                210
+_________________________________________________________________
+dense_207 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_208 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_209 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_210 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_211 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_212 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_213 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_214 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_215 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_216 (Dense)            (None, 1)                 31
+=================================================================
+Total params: 8,611
+Trainable params: 8,611
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 28 ended. Search finished for the next optimal point.
+Time taken: 35.4488
+Function value obtained: 1.9696
+Current minimum: 1.1315
+Iteration No: 29 started. Searching for the next optimal point.
+Model: "sequential_28"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_217 (Dense)            (None, 17)                119
+_________________________________________________________________
+dense_218 (Dense)            (None, 17)                306
+_________________________________________________________________
+dense_219 (Dense)            (None, 17)                306
+_________________________________________________________________
+dense_220 (Dense)            (None, 17)                306
+_________________________________________________________________
+dense_221 (Dense)            (None, 17)                306
+_________________________________________________________________
+dense_222 (Dense)            (None, 1)                 18
+=================================================================
+Total params: 1,361
+Trainable params: 1,361
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 29 ended. Search finished for the next optimal point.
+Time taken: 20.8042
+Function value obtained: 8.4078
+Current minimum: 1.1315
+Iteration No: 30 started. Searching for the next optimal point.
+Model: "sequential_29"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_223 (Dense)            (None, 28)                196
+_________________________________________________________________
+dense_224 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_225 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_226 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_227 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_228 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_229 (Dense)            (None, 1)                 29
+=================================================================
+Total params: 4,285
+Trainable params: 4,285
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 30 ended. Search finished for the next optimal point.
+Time taken: 148.2432
+Function value obtained: 33.1007
+Current minimum: 1.1315
+Iteration No: 31 started. Searching for the next optimal point.
+Model: "sequential_30"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_230 (Dense)            (None, 27)                189
+_________________________________________________________________
+dense_231 (Dense)            (None, 27)                756
+_________________________________________________________________
+dense_232 (Dense)            (None, 27)                756
+_________________________________________________________________
+dense_233 (Dense)            (None, 27)                756
+_________________________________________________________________
+dense_234 (Dense)            (None, 27)                756
+_________________________________________________________________
+dense_235 (Dense)            (None, 27)                756
+_________________________________________________________________
+dense_236 (Dense)            (None, 1)                 28
+=================================================================
+Total params: 3,997
+Trainable params: 3,997
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 31 ended. Search finished for the next optimal point.
+Time taken: 142.4136
+Function value obtained: 2.2241
+Current minimum: 1.1315
+Iteration No: 32 started. Searching for the next optimal point.
+Model: "sequential_31"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_237 (Dense)            (None, 30)                210
+_________________________________________________________________
+dense_238 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_239 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_240 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_241 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_242 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_243 (Dense)            (None, 1)                 31
+=================================================================
+Total params: 4,891
+Trainable params: 4,891
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 32 ended. Search finished for the next optimal point.
+Time taken: 142.0370
+Function value obtained: 1.6371
+Current minimum: 1.1315
+Iteration No: 33 started. Searching for the next optimal point.
+Model: "sequential_32"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_244 (Dense)            (None, 19)                133
+_________________________________________________________________
+dense_245 (Dense)            (None, 19)                380
+_________________________________________________________________
+dense_246 (Dense)            (None, 19)                380
+_________________________________________________________________
+dense_247 (Dense)            (None, 19)                380
+_________________________________________________________________
+dense_248 (Dense)            (None, 19)                380
+_________________________________________________________________
+dense_249 (Dense)            (None, 19)                380
+_________________________________________________________________
+dense_250 (Dense)            (None, 1)                 20
+=================================================================
+Total params: 2,053
+Trainable params: 2,053
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 33 ended. Search finished for the next optimal point.
+Time taken: 146.4388
+Function value obtained: 2.3213
+Current minimum: 1.1315
+Iteration No: 34 started. Searching for the next optimal point.
+Model: "sequential_33"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_251 (Dense)            (None, 30)                210
+_________________________________________________________________
+dense_252 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_253 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_254 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_255 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_256 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_257 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_258 (Dense)            (None, 1)                 31
+=================================================================
+Total params: 5,821
+Trainable params: 5,821
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 34 ended. Search finished for the next optimal point.
+Time taken: 111.3447
+Function value obtained: 1.7498
+Current minimum: 1.1315
+Iteration No: 35 started. Searching for the next optimal point.
+Model: "sequential_34"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_259 (Dense)            (None, 18)                126
+_________________________________________________________________
+dense_260 (Dense)            (None, 18)                342
+_________________________________________________________________
+dense_261 (Dense)            (None, 18)                342
+_________________________________________________________________
+dense_262 (Dense)            (None, 18)                342
+_________________________________________________________________
+dense_263 (Dense)            (None, 18)                342
+_________________________________________________________________
+dense_264 (Dense)            (None, 18)                342
+_________________________________________________________________
+dense_265 (Dense)            (None, 1)                 19
+=================================================================
+Total params: 1,855
+Trainable params: 1,855
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 35 ended. Search finished for the next optimal point.
+Time taken: 82.4420
+Function value obtained: 33.1007
+Current minimum: 1.1315
+Iteration No: 36 started. Searching for the next optimal point.
+Model: "sequential_35"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_266 (Dense)            (None, 21)                147
+_________________________________________________________________
+dense_267 (Dense)            (None, 21)                462
+_________________________________________________________________
+dense_268 (Dense)            (None, 21)                462
+_________________________________________________________________
+dense_269 (Dense)            (None, 21)                462
+_________________________________________________________________
+dense_270 (Dense)            (None, 21)                462
+_________________________________________________________________
+dense_271 (Dense)            (None, 21)                462
+_________________________________________________________________
+dense_272 (Dense)            (None, 1)                 22
+=================================================================
+Total params: 2,479
+Trainable params: 2,479
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 36 ended. Search finished for the next optimal point.
+Time taken: 145.1245
+Function value obtained: 1.3624
+Current minimum: 1.1315
+Iteration No: 37 started. Searching for the next optimal point.
+Model: "sequential_36"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_273 (Dense)            (None, 21)                147
+_________________________________________________________________
+dense_274 (Dense)            (None, 21)                462
+_________________________________________________________________
+dense_275 (Dense)            (None, 21)                462
+_________________________________________________________________
+dense_276 (Dense)            (None, 21)                462
+_________________________________________________________________
+dense_277 (Dense)            (None, 21)                462
+_________________________________________________________________
+dense_278 (Dense)            (None, 21)                462
+_________________________________________________________________
+dense_279 (Dense)            (None, 1)                 22
+=================================================================
+Total params: 2,479
+Trainable params: 2,479
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 37 ended. Search finished for the next optimal point.
+Time taken: 143.7555
+Function value obtained: 1.2411
+Current minimum: 1.1315
+Iteration No: 38 started. Searching for the next optimal point.
+Model: "sequential_37"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_280 (Dense)            (None, 26)                182
+_________________________________________________________________
+dense_281 (Dense)            (None, 26)                702
+_________________________________________________________________
+dense_282 (Dense)            (None, 26)                702
+_________________________________________________________________
+dense_283 (Dense)            (None, 26)                702
+_________________________________________________________________
+dense_284 (Dense)            (None, 26)                702
+_________________________________________________________________
+dense_285 (Dense)            (None, 26)                702
+_________________________________________________________________
+dense_286 (Dense)            (None, 1)                 27
+=================================================================
+Total params: 3,719
+Trainable params: 3,719
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 38 ended. Search finished for the next optimal point.
+Time taken: 141.2555
+Function value obtained: 1.7790
+Current minimum: 1.1315
+Iteration No: 39 started. Searching for the next optimal point.
+Model: "sequential_38"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_287 (Dense)            (None, 30)                210
+_________________________________________________________________
+dense_288 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_289 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_290 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_291 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_292 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_293 (Dense)            (None, 1)                 31
+=================================================================
+Total params: 4,891
+Trainable params: 4,891
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 39 ended. Search finished for the next optimal point.
+Time taken: 144.4163
+Function value obtained: 33.1007
+Current minimum: 1.1315
+Iteration No: 40 started. Searching for the next optimal point.
+Model: "sequential_39"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_294 (Dense)            (None, 30)                210
+_________________________________________________________________
+dense_295 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_296 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_297 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_298 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_299 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_300 (Dense)            (None, 1)                 31
+=================================================================
+Total params: 4,891
+Trainable params: 4,891
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 40 ended. Search finished for the next optimal point.
+Time taken: 145.0855
+Function value obtained: 1.3396
+Current minimum: 1.1315
+Iteration No: 41 started. Searching for the next optimal point.
+Model: "sequential_40"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_301 (Dense)            (None, 28)                196
+_________________________________________________________________
+dense_302 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_303 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_304 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_305 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_306 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_307 (Dense)            (None, 1)                 29
+=================================================================
+Total params: 4,285
+Trainable params: 4,285
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 41 ended. Search finished for the next optimal point.
+Time taken: 143.9817
+Function value obtained: 33.1007
+Current minimum: 1.1315
+Iteration No: 42 started. Searching for the next optimal point.
+Model: "sequential_41"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_308 (Dense)            (None, 18)                126
+_________________________________________________________________
+dense_309 (Dense)            (None, 18)                342
+_________________________________________________________________
+dense_310 (Dense)            (None, 18)                342
+_________________________________________________________________
+dense_311 (Dense)            (None, 18)                342
+_________________________________________________________________
+dense_312 (Dense)            (None, 18)                342
+_________________________________________________________________
+dense_313 (Dense)            (None, 18)                342
+_________________________________________________________________
+dense_314 (Dense)            (None, 1)                 19
+=================================================================
+Total params: 1,855
+Trainable params: 1,855
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 42 ended. Search finished for the next optimal point.
+Time taken: 142.8429
+Function value obtained: 1.3871
+Current minimum: 1.1315
+Iteration No: 43 started. Searching for the next optimal point.
+Model: "sequential_42"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_315 (Dense)            (None, 26)                182
+_________________________________________________________________
+dense_316 (Dense)            (None, 26)                702
+_________________________________________________________________
+dense_317 (Dense)            (None, 26)                702
+_________________________________________________________________
+dense_318 (Dense)            (None, 26)                702
+_________________________________________________________________
+dense_319 (Dense)            (None, 26)                702
+_________________________________________________________________
+dense_320 (Dense)            (None, 26)                702
+_________________________________________________________________
+dense_321 (Dense)            (None, 26)                702
+_________________________________________________________________
+dense_322 (Dense)            (None, 26)                702
+_________________________________________________________________
+dense_323 (Dense)            (None, 26)                702
+_________________________________________________________________
+dense_324 (Dense)            (None, 1)                 27
+=================================================================
+Total params: 5,825
+Trainable params: 5,825
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 43 ended. Search finished for the next optimal point.
+Time taken: 124.4490
+Function value obtained: 33.1007
+Current minimum: 1.1315
+Iteration No: 44 started. Searching for the next optimal point.
+Model: "sequential_43"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_325 (Dense)            (None, 21)                147
+_________________________________________________________________
+dense_326 (Dense)            (None, 21)                462
+_________________________________________________________________
+dense_327 (Dense)            (None, 21)                462
+_________________________________________________________________
+dense_328 (Dense)            (None, 21)                462
+_________________________________________________________________
+dense_329 (Dense)            (None, 21)                462
+_________________________________________________________________
+dense_330 (Dense)            (None, 21)                462
+_________________________________________________________________
+dense_331 (Dense)            (None, 1)                 22
+=================================================================
+Total params: 2,479
+Trainable params: 2,479
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 44 ended. Search finished for the next optimal point.
+Time taken: 146.2478
+Function value obtained: 1.3720
+Current minimum: 1.1315
+Iteration No: 45 started. Searching for the next optimal point.
+Model: "sequential_44"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_332 (Dense)            (None, 16)                112
+_________________________________________________________________
+dense_333 (Dense)            (None, 16)                272
+_________________________________________________________________
+dense_334 (Dense)            (None, 16)                272
+_________________________________________________________________
+dense_335 (Dense)            (None, 16)                272
+_________________________________________________________________
+dense_336 (Dense)            (None, 16)                272
+_________________________________________________________________
+dense_337 (Dense)            (None, 1)                 17
+=================================================================
+Total params: 1,217
+Trainable params: 1,217
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 45 ended. Search finished for the next optimal point.
+Time taken: 136.7898
+Function value obtained: 1.6791
+Current minimum: 1.1315
+Iteration No: 46 started. Searching for the next optimal point.
+Model: "sequential_45"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_338 (Dense)            (None, 29)                203
+_________________________________________________________________
+dense_339 (Dense)            (None, 29)                870
+_________________________________________________________________
+dense_340 (Dense)            (None, 29)                870
+_________________________________________________________________
+dense_341 (Dense)            (None, 29)                870
+_________________________________________________________________
+dense_342 (Dense)            (None, 29)                870
+_________________________________________________________________
+dense_343 (Dense)            (None, 29)                870
+_________________________________________________________________
+dense_344 (Dense)            (None, 29)                870
+_________________________________________________________________
+dense_345 (Dense)            (None, 29)                870
+_________________________________________________________________
+dense_346 (Dense)            (None, 29)                870
+_________________________________________________________________
+dense_347 (Dense)            (None, 1)                 30
+=================================================================
+Total params: 7,193
+Trainable params: 7,193
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 46 ended. Search finished for the next optimal point.
+Time taken: 119.7444
+Function value obtained: 3.8573
+Current minimum: 1.1315
+Iteration No: 47 started. Searching for the next optimal point.
+Model: "sequential_46"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_348 (Dense)            (None, 30)                210
+_________________________________________________________________
+dense_349 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_350 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_351 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_352 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_353 (Dense)            (None, 1)                 31
+=================================================================
+Total params: 3,961
+Trainable params: 3,961
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 47 ended. Search finished for the next optimal point.
+Time taken: 100.4979
+Function value obtained: 1.5203
+Current minimum: 1.1315
+Iteration No: 48 started. Searching for the next optimal point.
+Model: "sequential_47"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_354 (Dense)            (None, 19)                133
+_________________________________________________________________
+dense_355 (Dense)            (None, 19)                380
+_________________________________________________________________
+dense_356 (Dense)            (None, 19)                380
+_________________________________________________________________
+dense_357 (Dense)            (None, 19)                380
+_________________________________________________________________
+dense_358 (Dense)            (None, 19)                380
+_________________________________________________________________
+dense_359 (Dense)            (None, 19)                380
+_________________________________________________________________
+dense_360 (Dense)            (None, 1)                 20
+=================================================================
+Total params: 2,053
+Trainable params: 2,053
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 48 ended. Search finished for the next optimal point.
+Time taken: 148.6494
+Function value obtained: 1.3654
+Current minimum: 1.1315
+Iteration No: 49 started. Searching for the next optimal point.
+Model: "sequential_48"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_361 (Dense)            (None, 22)                154
+_________________________________________________________________
+dense_362 (Dense)            (None, 22)                506
+_________________________________________________________________
+dense_363 (Dense)            (None, 22)                506
+_________________________________________________________________
+dense_364 (Dense)            (None, 22)                506
+_________________________________________________________________
+dense_365 (Dense)            (None, 22)                506
+_________________________________________________________________
+dense_366 (Dense)            (None, 1)                 23
+=================================================================
+Total params: 2,201
+Trainable params: 2,201
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 49 ended. Search finished for the next optimal point.
+Time taken: 139.1413
+Function value obtained: 1.5672
+Current minimum: 1.1315
+Iteration No: 50 started. Searching for the next optimal point.
+Model: "sequential_49"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_367 (Dense)            (None, 30)                210
+_________________________________________________________________
+dense_368 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_369 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_370 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_371 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_372 (Dense)            (None, 30)                930
+_________________________________________________________________
+dense_373 (Dense)            (None, 1)                 31
+=================================================================
+Total params: 4,891
+Trainable params: 4,891
+Non-trainable params: 0
+_________________________________________________________________
+None
+Iteration No: 50 ended. Search finished for the next optimal point.
+Time taken: 143.5427
+Function value obtained: 1.7621
+Current minimum: 1.1315
+Model: "sequential_50"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_374 (Dense)            (None, 28)                196
+_________________________________________________________________
+dense_375 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_376 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_377 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_378 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_379 (Dense)            (None, 28)                812
+_________________________________________________________________
+dense_380 (Dense)            (None, 1)                 29
+=================================================================
+Total params: 4,285
+Trainable params: 4,285
+Non-trainable params: 0
+_________________________________________________________________
+None
+169/169 [==============================] - 0s 1ms/step - loss: 31.0217
 [[0.]
  [0.]
  [0.]
@@ -460,8 +1478,8 @@ None
  [0.]
  [0.]
  [0.]]
-[ 1.08800861  1.18883936  2.69174175  7.39909654  1.71550259  0.58321288
-  1.13381953  0.60803317  1.10322428 20.62664941]
-32.20091109989946
-33.09099085015603
-{'width': 28, 'nlayers': 11, 'activation': 'relu', 'epochs': 1283, 'learning_rate': 0.001}
+[1.72335407 2.95774206 0.7105531  1.42998119 4.03824855 1.25692109
+ 0.69636996 3.27633712 1.17228256 0.88895732]
+31.02168550914731
+34.12288222666842
+{'width': 28, 'nlayers': 5, 'activation': 'relu', 'epochs': 1361, 'learning_rate': 0.001}
