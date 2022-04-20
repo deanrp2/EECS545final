@@ -151,9 +151,9 @@ if __name__ == "__main__":
     # training
 
     linear = linearRegression(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest)
-    ridge = ridgeRegression(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest, 1)
-    lasso = lassoRegression(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest, 1)
-    elastic = elasticNet(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest, 1, 0.25)
+    ridge = ridgeRegression(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest, 0.1)
+    lasso = lassoRegression(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest, 0.01)
+    elastic = elasticNet(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest, 0.1, 0.25)
     print(linear)
     print(ridge)
     print(lasso)
