@@ -6,6 +6,7 @@ from pathlib import Path
 import time
 
 from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import PolynomialFeatures
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
@@ -119,6 +120,23 @@ def elasticNet(XTrain, YTrain, Xvalid, Yvalid, Xtest, Ytest, regConst,l1ratio):
     return {"training loss": training_loss, "validation loss": valid_loss, "test loss": test_loss, "params": params}
 
 
+def graph(iVal, linear, ridge, lasso, elastic):
+    print(linear)
+    print(ridge)
+    data = [linear, ridge, lasso, elastic]
+    fig, ax = plt.subplots(1, 1, figsize=(8, 4))
+    names = ["linear", "ridge,", "lasso", "elastic"]
+    cls = ["b", "r", "g", "c"]
+    for i in range(4):
+        ax.plot(iVal, data[i], ".", label=names[i], color=cls[i], markersize=4)
+    ax.set_xlabel("Dataset size")
+    ax.set_ylabel("MSE Loss")
+    ax.set_xlim([500, 10000])
+    plt.legend(loc="center left", bbox_to_anchor=(1, 0.5))
+    plt.tight_layout()
+    plt.show()
+
+
 if __name__ == "__main__":
     data = pd.read_csv("accident_classification/operation_accidents.csv")
     data.drop("accident", axis=1, inplace=True)
@@ -131,7 +149,13 @@ if __name__ == "__main__":
     rX = rXdf.values
 
     # preprocess x data and apply feature mappings
-    rX = multinomial(rX, 10)
+    #rX = multinomial(rX, 10)
+    poly = PolynomialFeatures(degree= 8, include_bias=True)
+    print(rX[:1])
+    print(rX.shape)
+    rX = poly.fit_transform(rX)
+    print(rX[:1])
+    print(rX.shape)
     scaler = MinMaxScaler()
     X = scaler.fit_transform(rX)
 
@@ -142,7 +166,32 @@ if __name__ == "__main__":
 
     #processing
     Y = Y.astype(float)
-
+    #
+    # linearTrainingVals = []
+    # ridgeTrainingVals = []
+    # lassoTrainingVals = []
+    # elasticTrainingVals = []
+    # iVals = []
+    #
+    # for i in range(50):
+    #     iVals.append(160*i+2000)
+    #     inX = X[:160*i+2000]
+    #     inY = Y[:160*i+2000]
+    #     print(inY.shape)
+    #     Xtrain, Xvalid, Xtest, Ytrain, Yvalid, Ytest = split(inX, inY)
+    #     # training
+    #
+    #     linear = linearRegression(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest)
+    #     ridge = ridgeRegression(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest, 0.0005)
+    #     #lasso = lassoRegression(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest, 0.00001)
+    #     #elastic = elasticNet(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest, 0.00025, 0.012)
+    #     linearTrainingVals.append(linear["training loss"])
+    #     ridgeTrainingVals.append(ridge["training loss"])
+    #     lassoTrainingVals.append(5.8)
+    #     elasticTrainingVals.append(6.2)
+    #
+    #
+    # graph(iVals, linearTrainingVals, ridgeTrainingVals, lassoTrainingVals, elasticTrainingVals)
     # splitting the datasets
     Xtrain, Xvalid, Xtest, Ytrain, Yvalid, Ytest = split(X, Y)
     print(Xtrain.shape, Xtest.shape, Ytrain.shape)
@@ -151,29 +200,13 @@ if __name__ == "__main__":
     # training
 
     linear = linearRegression(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest)
-    ridge = ridgeRegression(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest, 0.1)
-    lasso = lassoRegression(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest, 0.01)
-    elastic = elasticNet(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest, 0.1, 0.25)
     print(linear)
+    ridge = ridgeRegression(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest, 0.0005)
     print(ridge)
+    lasso = lassoRegression(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest, 0.00001)
     print(lasso)
+    elastic = elasticNet(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest, 0.00025, 0.012)
     print(elastic)
 
-    #training with feature mapping post normalization
-
-    # for i in range(1,10):
-    #     XtrainMap = multinomial(Xtrain, i)
-    #     XvalidMap = multinomial(Xvalid, i)
-    #     XtestMap = multinomial(Xtest, i)
-    #     print(XtrainMap.shape)
-    #     linear = linearRegression(XtrainMap, Ytrain, XvalidMap, Yvalid, XtestMap, Ytest)
-    #     ridge = ridgeRegression(XtrainMap, Ytrain, XvalidMap, Yvalid, XtestMap, Ytest, 1)
-    #     lasso = lassoRegression(XtrainMap, Ytrain, XvalidMap, Yvalid, XtestMap, Ytest, 1)
-    #     elastic = elasticNet(XtrainMap, Ytrain, XvalidMap, Yvalid, XtestMap, Ytest, 1, 0.5)
-    #     print(i)
-    #     print(linear)
-    #     print(ridge)
-    #     print(lasso)
-    #     print(elastic)
 
 
