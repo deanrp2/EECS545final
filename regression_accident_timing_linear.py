@@ -79,7 +79,7 @@ def ridgeRegression(XTrain, YTrain, Xvalid, Yvalid, Xtest, Ytest, regConst):
 
 
 def lassoRegression(XTrain, YTrain, Xvalid, Yvalid, Xtest, Ytest, regConst):
-    model = Lasso(alpha=regConst, max_iter=10000)
+    model = Lasso(alpha=regConst, max_iter=50000)
     model.fit(XTrain, YTrain)
 
     # Training Losses
@@ -100,7 +100,7 @@ def lassoRegression(XTrain, YTrain, Xvalid, Yvalid, Xtest, Ytest, regConst):
 
 
 def elasticNet(XTrain, YTrain, Xvalid, Yvalid, Xtest, Ytest, regConst,l1ratio):
-    model = ElasticNet(alpha=regConst, l1_ratio=l1ratio,max_iter=10000)
+    model = ElasticNet(alpha=regConst, l1_ratio=l1ratio,max_iter=50000)
     model.fit(XTrain, YTrain)
 
     # Training Losses
@@ -123,12 +123,12 @@ def elasticNet(XTrain, YTrain, Xvalid, Yvalid, Xtest, Ytest, regConst,l1ratio):
 def graph(iVal, linear, ridge, lasso, elastic):
     print(linear)
     print(ridge)
-    data = [linear, ridge, lasso, elastic]
+    data = [ridge, lasso, elastic]
     fig, ax = plt.subplots(1, 1, figsize=(8, 4))
-    names = ["linear", "ridge,", "lasso", "elastic"]
-    cls = ["b", "r", "g", "c"]
-    for i in range(4):
-        ax.plot(iVal, data[i], ".", label=names[i], color=cls[i], markersize=4)
+    names = ["ridge,", "lasso", "elastic"]
+    cls = ["r", "g", "c"]
+    for i in range(3):
+        ax.loglog(iVal, data[i], ".", label=names[i], color=cls[i], markersize=4)
     ax.set_xlabel("Dataset size")
     ax.set_ylabel("MSE Loss")
     ax.set_xlim([500, 10000])
@@ -166,36 +166,37 @@ if __name__ == "__main__":
 
     #processing
     Y = Y.astype(float)
-    #
-    # linearTrainingVals = []
-    # ridgeTrainingVals = []
-    # lassoTrainingVals = []
-    # elasticTrainingVals = []
-    # iVals = []
-    #
-    # for i in range(50):
-    #     iVals.append(160*i+2000)
-    #     inX = X[:160*i+2000]
-    #     inY = Y[:160*i+2000]
-    #     print(inY.shape)
-    #     Xtrain, Xvalid, Xtest, Ytrain, Yvalid, Ytest = split(inX, inY)
-    #     # training
-    #
-    #     linear = linearRegression(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest)
-    #     ridge = ridgeRegression(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest, 0.0005)
-    #     #lasso = lassoRegression(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest, 0.00001)
-    #     #elastic = elasticNet(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest, 0.00025, 0.012)
-    #     linearTrainingVals.append(linear["training loss"])
-    #     ridgeTrainingVals.append(ridge["training loss"])
-    #     lassoTrainingVals.append(5.8)
-    #     elasticTrainingVals.append(6.2)
-    #
-    #
-    # graph(iVals, linearTrainingVals, ridgeTrainingVals, lassoTrainingVals, elasticTrainingVals)
+
+    linearTrainingVals = []
+    ridgeTrainingVals = []
+    lassoTrainingVals = []
+    elasticTrainingVals = []
+    iVals = []
+
+    X = X
+    Y = Y
+
+    for i in range(50):
+        iVals.append(160*i+2000)
+        inX = X[:160*i+2000]
+        inY = Y[:160*i+2000]
+        print(inX.shape)
+        # print(inY.shape)
+        Xtrain, Xvalid, Xtest, Ytrain, Yvalid, Ytest = split(inX, inY)
+        # training
+
+        ridge = ridgeRegression(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest, 0.0005)
+        lasso = lassoRegression(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest, 0.00001)
+        elastic = elasticNet(Xtrain, Ytrain, Xvalid, Yvalid, Xtest, Ytest, 0.00025, 0.012)
+        ridgeTrainingVals.append(ridge["test loss"])
+        lassoTrainingVals.append(lasso["test loss"])
+        elasticTrainingVals.append(elastic["test loss"])
+
+
+    graph(iVals, linearTrainingVals, ridgeTrainingVals, lassoTrainingVals, elasticTrainingVals)
     # splitting the datasets
     Xtrain, Xvalid, Xtest, Ytrain, Yvalid, Ytest = split(X, Y)
     print(Xtrain.shape, Xtest.shape, Ytrain.shape)
-    dsets = [Xtrain, Xvalid, Xtest, Ytrain, Yvalid, Ytest]
 
     # training
 
