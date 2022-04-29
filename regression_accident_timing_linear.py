@@ -176,7 +176,7 @@ if __name__ == "__main__":
     X = X
     Y = Y
 
-    for i in range(50):
+    for i in range(100):
         iVals.append(160*i+2000)
         inX = X[:160*i+2000]
         inY = Y[:160*i+2000]
